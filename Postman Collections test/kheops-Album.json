@@ -19,7 +19,7 @@
               "script": {
                 "id": "83822f04-38b7-400f-bc35-7a638a6d5e26",
                 "exec": [
-                  "// ensure healthy response code",
+                  "//201",
                   "tests[\"Status code is 201\"] = responseCode.code === 201;",
                   "",
                   "var jsonObject = JSON.parse(responseBody);",
@@ -53,13 +53,13 @@
               "urlencoded": [
                 {
                   "key": "grant_type",
-                  "value": "urn:ietf:params:oauth:grant-type:jwt-bearer",
-                  "type": "text"
+                  "type": "text",
+                  "value": "urn:ietf:params:oauth:grant-type:jwt-bearer"
                 },
                 {
                   "key": "assertion",
-                  "value": "eyJhbGciOiJIUzI1NiIsImtpZCI6IjEifQ.eyJhdWQiOiJhdXRob3JpemF0aW9uLmtoZW9wcy5vbmxpbmUiLCJzdWIiOiIxMjM0NTY3ODkiLCJlbWFpbCI6InRvdG9AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImV4cCI6MjUyMjk0MzU3MiwiaXNzIjoiYXV0aG9yaXphdGlvbi5raGVvcHMub25saW5lIiwiaWF0IjoxNTIyOTM5OTcyfQ.916Xn1BnUwdhOvuWErWWOh_AkYXeS36mVRTP06VWsVA",
-                  "type": "text"
+                  "type": "text",
+                  "value": "eyJhbGciOiJIUzI1NiIsImtpZCI6IjEifQ.eyJhdWQiOiJhdXRob3JpemF0aW9uLmtoZW9wcy5vbmxpbmUiLCJzdWIiOiIxMjM0NTY3ODkiLCJlbWFpbCI6InRvdG9AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImV4cCI6MjUyMjk0MzU3MiwiaXNzIjoiYXV0aG9yaXphdGlvbi5raGVvcHMub25saW5lIiwiaWF0IjoxNTIyOTM5OTcyfQ.916Xn1BnUwdhOvuWErWWOh_AkYXeS36mVRTP06VWsVA"
                 }
               ]
             },
